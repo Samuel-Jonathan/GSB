@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Smooch+Sans:wght@300;500&display=swap");
+
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*---------------------Connexion--------------------*/
+
+#logo {
+  /* Positionnement du logo*/
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+h2 {
+  /* Positionnement du logo*/
+  text-align: center;
+
+  /* Police */
+  color: black;
+  font-family: "consolas";
+}
+
+#utilisateur {
+  /* Positionnement du logo*/
+  display: block;
+  margin: auto;
+  margin-top: -3%;
+
+  /* Taille du champs */
+  width: 23%;
+  min-width: 250px;
+
+  /* Espacement du champs */
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /*Bordure*/
+  border-radius: 10px;
+}
+
+#utilisateur_icone {
+  /* Positionnement de l'icone (utilisateur) */
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  right: 220px;
+}
+
+#utilisateur[type="text"] {
+  /* Police du champs (utilisateur) */
+  font-family: "consolas";
+}
+
+#mdp {
+  /* Positionnement du logo*/
+  display: block;
+  margin: auto;
+  margin-top: 90px;
+
+  /* Taille du champs */
+  width: 23%;
+  min-width: 250px;
+
+  /* Espacement du champs */
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /*Bordure*/
+  border-radius: 10px;
+}
+
+#mdp_icone {
+  /* Positionnement de l'icone (mdp) */
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 140px;
+  right: 220px;
+}
+
+#connecte {
+  /* Positionnement du bouton (connexion) */
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50px;
+
+  /* Bordure */
+  border-radius: 5px;
+  border-color: black;
+  border-width: 3px;
+
+  /* Espacement du bouton (connexion) */
+  padding: 10px;
+
+  /* Arrière-plan */
+  background-color: white;
+
+  /* Police */
+  font-family: Poppins;
+
+  /* Taille du bouton */
+  min-width: 100px;
+}
+
+#connecte:hover {
+  /* Arrière-plan */
+  background-color: #dcdcdc;
+}
+
+#effacer {
+  /* Positionnement du bouton (connexion) */
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 70px;
+
+  /* Bordure */
+  border-radius: 5px;
+  border-color: black;
+  border-width: 3px;
+
+  /* Espacement du bouton (connexion) */
+  padding: 10px;
+
+  /* Taille du bouton */
+  width: 118px;
+
+  /* Arrière-plan */
+  background-color: white;
+
+  /* Police */
+  font-family: Poppins;
+}
+
+#effacer:hover {
+  /* Arrière-plan */
+  background-color: #dcdcdc;
+}
+
+/* Responsive */
+@media screen and (max-width: 306px) {
+  #logo {
+    width: 55%;
+  }
+  #utilisateur_icone {
+    top: 20px;
+    right: -0px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 110px;
+  }
+
+  #connecte {
+    top: 20px;
+  }
+
+  #effacer {
+    top: 30px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #logo {
+    width: 55%;
+  }
+  #utilisateur_icone {
+    top: 20px;
+    right: -0px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 110px;
+  }
+
+  #connecte {
+    top: 20px;
+  }
+
+  #effacer {
+    top: 30px;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 415px) {
+  #logo {
+    width: 55%;
+  }
+  #utilisateur_icone {
+    top: 20px;
+    left: 0px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 110px;
+  }
+
+  #connecte {
+    top: 20px;
+  }
+
+  #effacer {
+    top: 30px;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 415px) {
+  #utilisateur_icone {
+    top: 20px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 110px;
+  }
+
+  #connecte {
+    top: 20px;
+  }
+
+  #effacer {
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 416px) and (max-width: 769px) {
+  #logo {
+    width: 55%;
+  }
+
+  #utilisateur_icone {
+    top: 20px;
+    width: 10%;
+    left: 0px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 120px;
+
+    width: 10%;
+  }
+
+  #mdp {
+    position: relative;
+    top: 20px;
+  }
+
+  #connecte {
+    font-size: 25px;
+    top: 50px;
+  }
+
+  #effacer {
+    font-size: 25px;
+    top: 80px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 821px) {
+  #logo {
+    width: 55%;
+  }
+
+  #utilisateur_icone {
+    top: 20px;
+    width: 10%;
+    left: 0px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 120px;
+
+    width: 10%;
+  }
+
+  #mdp {
+    position: relative;
+    top: 20px;
+  }
+
+  #connecte {
+    font-size: 25px;
+    top: 50px;
+  }
+
+  #effacer {
+    font-size: 25px;
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 822px) and (max-width: 913px) {
+  #logo {
+    width: 45%;
+  }
+
+  #utilisateur_icone {
+    top: 20px;
+    width: 10%;
+    left: 0px;
+  }
+
+  #mdp_icone {
+    width: 10%;
+    left: 0px;
+    top: 120px;
+  }
+
+  #mdp {
+    width: 15%;
+    position: relative;
+    top: 20px;
+  }
+
+  #connecte {
+    font-size: 25px;
+    top: 50px;
+  }
+
+  #effacer {
+    font-size: 25px;
+    top: 80px;
+  }
+}
+
+@media screen and (min-width: 914px) and (max-width: 1025px) {
+  #logo {
+    width: 15%;
+  }
+
+  #utilisateur_icone {
+    top: 20px;
+    left: 0px;
+  }
+
+  #mdp_icone {
+    left: 0px;
+    top: 120px;
+  }
+
+  #mdp {
+    width: 15%;
+    position: relative;
+    top: 20px;
+  }
+
+  #connecte {
+    font-size: 15px;
+    top: 50px;
+  }
+
+  #effacer {
+    font-size: 15px;
+    top: 80px;
+  }
+}

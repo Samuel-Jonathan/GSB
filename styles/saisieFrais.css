@@ -1,0 +1,54 @@
+#contenu {
+  text-align: center;
+  position: relative;
+  margin-left: 200px;
+}
+
+
+#titreSaisieFrais {
+  display: block;
+  margin: auto;
+  position: relative;
+  left: 650px;
+}
+
+#dateSaisieFrais{
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  left: 80%;
+}
+
+#listeFraisHorsForfait{
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  left: 80%;
+}
+
+@media screen and (max-width: 376px) {
+  #role {
+    left: 60px;
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 415px) {
+}
+
+@media screen and (min-width: 377px) and (max-width: 415px) {
+}
+
+@media screen and (min-width: 416px) and (max-width: 769px) {
+}
+
+@media screen and (min-width: 770px) and (max-width: 821px) {
+}
+
+@media screen and (min-width: 822px) and (max-width: 913px) {
+}
+
+@media screen and (min-width: 914px) and (max-width: 1025px) {
+}

@@ -1,0 +1,114 @@
+/* -------------------------- Sommaire du visiteur ---------------------------- */
+
+.menu {
+  /* Taille du menu */
+  width: 17%;
+  height: 100%;
+
+  /* Position du menu */
+  position: fixed;
+  top: 0;
+
+  /* Arrière-plan */
+  background-color: #0a2832;
+}
+
+.liens {
+  /* Espacement du texte */
+  padding-top: 150px;
+  text-align: center;
+}
+
+#lien1 {
+  /* Espacement du texte */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#lien2 {
+  /* Espacement du texte */
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#lien3 {
+  /* Espacement du texte */
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#lien1:hover {
+  /* Espacement du texte */
+  padding-bottom: 50px;
+  /* Arrière-plan */
+  background-color: lightblue;
+  /* Animation */
+  transition-duration: 0.2s;
+}
+
+#lien2:hover {
+  /* Espacement du texte */
+  padding-bottom: 50px;
+  /* Arrière-plan */
+  background-color: lightblue;
+  /* Animation */
+  transition-duration: 0.2s;
+}
+
+#lien3:hover {
+  /* Position du lien */
+  padding-bottom: 50px;
+  /* Arrière-plan */
+  background-color: lightblue;
+  /* Animation */
+  transition-duration: 0.2s;
+}
+
+.liens a {
+  /* Enlève le soulignement */
+  text-decoration: none;
+}
+
+#role {
+  /* Positionnement du texte */
+  display: block;
+  text-align: center;
+  position: relative;
+  left: 100px;
+  bottom: 48px;
+  /* Arrière-plan */
+  background-color: rgb(117, 187, 211);
+
+  /* Espacement du texte */
+  padding: 50px;
+
+  /* Plan */
+  z-index: -1;
+
+  /* Police */
+  font-family: consolas;
+  font-size: 25px;
+}
+
+#menu_bouton{
+  z-index: 4;
+  display: block;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 376px) {
+ #role{
+   left: 60px;
+   width: 84%;
+ }
+}
+
+@media screen and (min-width: 377px) and (max-width: 415px) {
+  #role{
+    left: 60px;
+    width: 86%;
+  }
+}
+
+
