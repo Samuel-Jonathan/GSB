@@ -11,6 +11,7 @@ if ($_SESSION['role'] == 'Visiteur') {
 switch ($action) {
 	case 'selectionnerMois': {
 
+		// Valider fiche de mois
 			if ($_SESSION['role'] == 'Comptable') {
 				if (isset($_REQUEST['lstVisiteurs'])) {
 					$nom_prenom = $_POST['lstVisiteurs'];
@@ -20,8 +21,14 @@ switch ($action) {
 					$idVisiteur = $idVisiteur[0];
 				}
 
-				$_SESSION['idVisiteurChoisi'] = $idVisiteur;
-				
+
+				if(isset($idVisiteur)){
+					$_SESSION['idVisiteurChoisi'] = $idVisiteur;
+				}
+		
+
+				// Suivre paiement fiche de mois
+			    $idVisiteur = $_SESSION['idVisiteur'];
 			}
 
 
@@ -62,11 +69,11 @@ switch ($action) {
 
 	case 'validerFicheFrais': {
 
-			if (date('d') >= 10 && date('d') <= 20) {
+			if (date('d') >= 10 && date('d') <= 15) {
 				$pdo->valideFicheFrais($_SESSION["idVisiteurChoisi"], $_SESSION['annee'] . $_SESSION['mois']);
 				echo 'La fiche de frais a été validé !';
 			}else{
-				echo "Erreur, vous pouvez valider une fiche de frais seulement entre le 10 et le 20 d'un mois !";
+				echo "<center><p style=\"color:red; font-size:25px;\">Erreur, vous pouvez valider une fiche de frais seulement entre le 10 et le 20 d'un mois !</p></center>";
 			}
 		}
 }
