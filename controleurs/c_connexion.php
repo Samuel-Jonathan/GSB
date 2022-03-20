@@ -17,16 +17,23 @@ switch($action){
 			include("vues/v_erreurs.php");
 			include("vues/v_connexion.php");
 		}
-		else{
+		else {
 			$id = $visiteur['id'];
 			$nom =  $visiteur['nom'];
 			$prenom = $visiteur['prenom'];
-			connecter($id,$nom,$prenom);
-			include("vues/v_sommaire.php");
+			$role = $visiteur['role'];
+
+			connecter($id, $nom, $prenom, $role);
+			if ($role == 'Comptable') {
+				include("vues/v_sommaire_comptable.php");
+			} else {
+				include("vues/v_sommaire.php");
+			}
 		}
 		break;
 	}
 	default :{
+		session_destroy();
 		include("vues/v_connexion.php");
 		break;
 	}
