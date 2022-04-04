@@ -11,5 +11,3 @@ logo.style.visibility = "visible";
 logo.style.zIndex = 1;
 logo.style.paddingLeft = "15px";
 
-
-

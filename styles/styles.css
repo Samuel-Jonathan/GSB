@@ -366,3 +366,14 @@ h2 {
     top: 80px;
   }
 }
+
+@media screen and (min-width: 1920px){
+  #utilisateur_icone {
+    left: -270px;
+  }
+
+  #mdp_icone {
+    top: 120px;
+    left: -270px;
+  }
+}

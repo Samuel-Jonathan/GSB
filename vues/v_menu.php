@@ -1,15 +1,23 @@
 <div id="menuid">
    <div class="menu">
       <div class="liens">
-         <div id="lien1">
-            <a href="index.php?uc=gererFrais&action=saisirFrais">Renseigner fiche de frais</a>
-         </div>
-         <div id="lien2">
-            <br><a href="index.php?uc=etatFrais&action=selectionnerMois">Consulter fiches de frais</a>
-         </div>
-         <div id="lien3">
-            <br><a href="index.php?uc=connexion&action=deconnexion">Se déconnecter</a>
-         </div>
+         <a href="index.php?uc=gererFrais&action=saisirFrais">
+            <div id="lien1">
+               Renseigner fiche de frais
+            </div>
+         </a>
+         <a href="index.php?uc=etatFrais&action=selectionnerMois">
+            <div id="lien2">
+
+               <br>Consulter fiches de frais
+            </div>
+         </a>
+         <a href="index.php?uc=connexion&action=deconnexion">
+            <div id="lien3">
+
+               <br>Se déconnecter
+            </div>
+         </a>
       </div>
    </div>
 </div>

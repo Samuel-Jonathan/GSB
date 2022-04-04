@@ -17,6 +17,7 @@
   /* Espacement du texte */
   padding-top: 150px;
   text-align: center;
+
 }
 
 #lien1 {
@@ -108,6 +109,12 @@
   #role{
     left: 60px;
     width: 86%;
+  }
+}
+
+@media screen and (min-width:1920px){
+  #lien1{
+    margin-top: 70px;
   }
 }
 
