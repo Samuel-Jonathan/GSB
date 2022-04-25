@@ -50,7 +50,7 @@
   <div class="piedForm">
     <p>
       <input id="ajouter" type="submit" value="Ajouter" size="20" />
-      <input id="effacer" type="reset" value="Effacer" size="20" />
+      <input id="" type="reset" value="Effacer" size="20" />
     </p>
   </div>
 
