@@ -1,38 +1,24 @@
 #contenu {
   text-align: center;
   position: relative;
-  margin-left: 200px;
-  bac
+  display: inline-block;
+  margin-left: 650px;
+
 }
 
-
-#titreSaisieFrais {
-  display: block;
-  margin: auto;
-  position: relative;
-  left: 650px;
-}
-
-#dateSaisieFrais{
-  display: block;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  left: 80%;
-}
 
 #listeFraisHorsForfait{
-  display: block;
+  
   margin: auto;
   text-align: center;
   position: relative;
   left: 80%;
 }
 
-@media screen and (max-width: 376px) {
-  #role {
-    left: 60px;
-    width: 84%;
-  }
+
+#contenu2{
+ 
+  text-align: center;
+  margin-left: 0px;
 }
 

@@ -57,7 +57,8 @@ class PdoGsb
 
 	public function getVisiteurs()
 	{
-		$req = "select DISTINCT visiteur.nom, visiteur.prenom FROM visiteur INNER JOIN fichefrais ON visiteur.id = fichefrais.idVisiteur WHERE role='Visiteur'";
+		$req = "select DISTINCT visiteur.nom, visiteur.prenom FROM visiteur INNER JOIN fichefrais
+		 ON visiteur.id = fichefrais.idVisiteur WHERE role='Visiteur'";
 		$rs = PdoGsb::$monPdo->query($req);
 		$lesLignes = $rs->fetchAll();
 		return $lesLignes;
